@@ -1,0 +1,50 @@
+.status-bar{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+header{
+  text-align: center;
+  margin: 100px;
+}
+
+header > p{
+  color: #7c7c7c;
+}
+
+.login-form input{
+  display: block;
+  margin: 0 auto;
+  width: 95vw;
+  height: 70px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.login-form input[type="text"], .login-form input[type="password"]{
+  border-bottom: #808080 solid 1px;
+}
+
+.login-form input[type="text"]:focus, .login-form input[type="password"]:focus{
+  outline: none;
+}
+
+
+.login-form input[type="submit"] {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.login-form input[type="submit"]:nth-child(3) {
+  margin-top: 50px;
+}
+
+.login-form a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #252525;
+  font-weight: 600;
+}
