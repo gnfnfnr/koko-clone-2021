@@ -11,7 +11,10 @@
 .user-component_img {
   border-radius: 40px;
   object-fit: cover;
-  margin-right: 25px;
+}
+
+.user-component__text{
+  margin-left: 25px;
 }
 
 .user-component_name{
@@ -36,12 +39,18 @@
 }
 
 .user-component__column:last-child{
-  color: rgba(0, 0, 0, 0.5);
-
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .user-component_img--sm{
   background-color: var(--yellow);
   padding: 20px;
   border-radius: 30px;
+}
+
+.user-component__time{
+  margin-bottom: 10px;
 }

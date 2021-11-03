@@ -10,10 +10,6 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.friends-screen{
-  padding: var(--horizontal-space);
-}
-
 .fa-info-circle::after{
   content: "Friends' Names Display ";
   color: rgba(0, 0, 0, 0.5);

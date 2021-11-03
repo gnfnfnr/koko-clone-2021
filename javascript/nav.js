@@ -1,9 +1,11 @@
-const navNotification =  document.querySelector('.nav__notification');
+const navNotification =  document.querySelectorAll('.badge');
 
 function notification(){
   const today = new Date();
   const hours =today.getHours();
-  navNotification.innerText= `${hours}`;
+  navNotification.forEach((item) =>
+    item.innerText= `${hours}`
+  );
 }
 
 notification();
