@@ -1,0 +1,21 @@
+.fa-exclamation-circle{
+  color: #d75454;
+}
+
+.icon-row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-screen_sub_header{
+  margin-bottom: 0;
+}
+
+.icon-row_icon:nth-child(2){
+  position: relative;
+}
+
+.icon-row_icon:nth-child(2) > .dot{
+  left: 155px;
+  bottom: 96px;
+}
