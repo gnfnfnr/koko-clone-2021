@@ -7,7 +7,9 @@ function setTime(){
   let hours =today.getHours();
   const minutes = today.getMinutes();
   const seconds = String(today.getSeconds()).padStart(2, "0");
-  chatTime.innerText = `${hours}:${String(minutes).padStart(2, "0")}`;
+  if (chatTime) {
+    chatTime.innerText = `${hours}:${String(minutes).padStart(2, "0")}`;
+  }
   let MODE = "AM";
  if (hours >= 12){
    if (hours >= 13) {
