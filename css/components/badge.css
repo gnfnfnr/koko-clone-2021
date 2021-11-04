@@ -9,3 +9,13 @@
   color: white;
   font-weight: 600;
 }
+
+.dot{
+  background-color: #ff6229;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 32px;
+  bottom: 28px;
+}

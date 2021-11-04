@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Friends - Kokoa-Clone</title>
+    <title>Find - Kokoa-Clone</title>
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
@@ -24,85 +24,89 @@
       <h1 class="screen-header_title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-2x"></i></span>
-        <span><i class="fas fa-cog fa-2x"></i></span>
+        <span><i class="fas fa-cog fa-2x"></i>
+          <span class="dot"></span>
+        </span>
       </div>
     </header>
         <main class="main-screen">
-          <div class="main-screen_icon">
-            <div class="main-screen_icon_column">
+          <div class="find-icons">
+            <div class="find-icons_icon">
               <i class="fas fa-qrcode fa-2x"></i>
               <span>QR Code</span>
             </div>
-            <div class="main-screen_icon_column">
+            <div class="find-icons_icon">
               <i class="far fa-address-book fa-2x"></i>
               <span>Add by<br>Contacts</span>
             </div>
-            <div class="main-screen_icon_column">
+            <div class="find-icons_icon">
               <i class="far fa-id-card fa-2x"></i>
               <span>Add by ID</span>
             </div>
-            <div class="main-screen_icon_column">
+            <div class="find-icons_icon">
               <i class="far fa-envelope fa-2x"></i>
               <span>Invite</span>
             </div>
           </div>
           <div class="main-screen_sub">
             <div class="main-screen_sub_header">
-              <h4 class="main-screen_sub_title">Recommended Friends</h4>
+              <h4>Recommended Friends</h4>
             </div>
-            <div class="main-screen_sub_no_box">
+            <div class="main-screen_sub_box">
               You have no recommended friends.
             </div>
           </div>
           <div class="main-screen_sub">
             <div class="main-screen_sub_header">
-              <h4 class="main-screen_sub_title">Open Chat</h4>
-              <div class="main-screen_sub_Home">
-                <span>Go to Openchat Home</span>
-                <i class="fas fa-chevron-right fa-xs"></i>
-              </div>
+              <h4>Open Chat</h4>
+                <span>
+                  Go to Openchat Home
+                  <i class="fas fa-chevron-right fa-xs"></i>
+                </span>
             </div>
-            <div class="main-screen_sub_box">
-              <div class="chat-box_text">
-                <span class="chat-box_text_title">
+            <div class="open-chat">
+              <div class="open-chat-column">
+                <h5 class="open-post_title">
                   #ONEPIECE
-                </span>
-                <span>
-                  #FANTASY#PIRATE#luffy
-                </span>
-                <div class="chat-box_member">
+                </h5>
+                <h6 class="open-post_hastage">
+                  #fantasy#pirate#luffy
+                </h6>
+                <div class="open-chat_member">
                   <img src="../woman.jpg" alt="">
-                  <span>619 members</span>
-                  <span>|</span>
-                  <span>Active</span>
+                  <span class="open-chat_member-count">619 members</span>
+                  <div class="divider"></div>
+                  <span class="open-chat_member-status">Active</span>
                 </div>
               </div>
-              <div class="chat-box_icon">
+              <div class="open-chat_icon">
                 <img src="../luffy.jpg" alt="">
-                <div class="chat-box_heart">
-                  ♥ 1031
+                <div class="open-chat_heart">
+                  <i class="fas fa-heart"></i>
+                  <span>1031</span>
                 </div>
               </div>
             </div>
-            <div class="main-screen_sub_box">
-              <div class="chat-box_text">
-                <span class="chat-box_text_title">
+            <div class="open-chat">
+              <div class="open-chat-column">
+                <h5 class="open-post_title">
                   #NAURTO
-                </span>
-                <span>
-                  #FANTASY#NINJA#naurto
-                </span>
-                <div class="chat-box_member">
+                </h5>
+                <h6 class="open-post_hastage">
+                  #fantasy#ninja#naurto
+                </h6>
+                <div class="open-chat_member">
                   <img src="../vehicle.jpg" alt="">
-                  <span>619 members</span>
-                  <span>|</span>
-                  <span>Active</span>
+                  <span class="open-chat_member-count">619 members</span>
+                  <div class="divider"></div>
+                  <span class="open-chat_member-status">Active</span>
                 </div>
               </div>
-              <div class="chat-box_icon">
+              <div class="open-chat_icon">
                 <img src="../naurto.jpg" alt="">
-                <div class="chat-box_heart">
-                  ♥ 417
+                <div class="open-chat_heart">
+                  <i class="fas fa-heart"></i>
+                  <span>417</span>
                 </div>
               </div>
             </div>
@@ -128,7 +132,7 @@
         </li>
         <li>
           <a class="nav__link" href="more.html">
-            <span class="nav__dot"></span>
+            <span class="dot"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>

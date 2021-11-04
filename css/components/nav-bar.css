@@ -1,7 +1,7 @@
 .nav{
  background-color: #F9F9FA;
  padding:30px 70px;
- border-top: 1px solid rgba(0, 0, 0, 0.1);
+ border-top: var(--main-border);
  width: 100%;
  position: fixed;
  bottom: 0;
@@ -19,22 +19,7 @@
 }
 
 .nav__notification{
-  background-color: #ff6229;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
   position: absolute;
   left: 15px;
   bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 600;
-}
-
-.nav__dot{
-  position: absolute;
-  left: 32px;
-  bottom: 28px;
 }
