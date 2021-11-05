@@ -9,7 +9,7 @@
 }
 
 .user-component_img {
-  border-radius: 40px;
+  border-radius: 30%;
   object-fit: cover;
 }
 
@@ -32,6 +32,11 @@
 .user-component_img--xl{
   height: 120px;
   width: 120px;
+}
+
+.user-component_img--m{
+  height: 80px;
+  width: 80px;
 }
 
 .user-component_name--regular{
