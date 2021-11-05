@@ -1,52 +1,33 @@
-.alt-header{
-  display: flex;
-  padding: 40px 30px 30px;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 85%;
-}
-
-.alt-header_title{
-  font-weight: 600;
-  font-size: 50px;
-}
-
-.settings-icons_column_icon{
+.settings-set{
   padding: 36px 0;
-}
-
-.settings-icons_column_icon:not(.settings-icons_column_icon:last-child){
-  padding: 36px 0;
-  border-bottom: var(--main-border);
-}
-
-
-.settings-icons_column_icon span{
+  position: relative;
   font-size: 20px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 
-.settings-icons_column_icon i {
-  padding-right: 40px;
+.settings-set-column:last-child{
+  opacity: 0.7;
 }
 
-.main-divide-line{
+.settings-set:not(.settings-set:last-child){
+  padding: 36px 0;
   border-bottom: var(--main-border);
-  margin-top: -70px;
-  margin-bottom: 25px;
 }
 
-.settings-icons_column_icon{
-  position: relative;
+.settings-set i {
+  padding-right: 40px;
+  font-size: 25px;
 }
 
-.settings-icons_column_icon .badge{
+.settings-set .badge{
   position: absolute;
   left: 142px;
   bottom: 35px;
 }
 
-.settings-icons_column_icon_etc{
+.settings-set_etc{
   display: flex;
   justify-content: space-between;
 }
