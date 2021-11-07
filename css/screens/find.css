@@ -109,3 +109,19 @@
 .open-chat:last-child{
   border-top: var(--main-border);
 }
+
+@keyframes heartScale {
+  from{
+    transform: none;
+    color: white;
+  }
+  to{
+    transform: scale(2.5);
+    color: tomato;
+  }
+}
+
+.open-chat_heart:hover .fa-heart{
+  will-change: transform;
+  animation: heartScale 3s linear infinite;
+}
