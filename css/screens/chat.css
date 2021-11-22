@@ -1,6 +1,6 @@
 
 #chat-screen{
-  background-color: #abc1d1;
+  background-color: #f5dfad;
   height: 500vh;
 }
 
@@ -9,25 +9,86 @@
   position:  fixed;
   width: 100%;
   box-sizing: border-box;
-  background-color: #abc1d1;
+  background-color: #f5dfad;
   top: 0;
 }
 
 @keyframes fadeIn {
   from{
-    transform: translateY(10px);
+    transform: translateX(-10px);
     opacity: 0;
   }
 
   to{
     transform: none;
-    opacity: 1
+    opacity: 1;
   }
 }
 
+@keyframes fadeOut {
+  from{
+    opacity: 1;
+  }
+  
+  to{
+    /* transform: translateX(10px); */
+    opacity: 0;
+  }
+}
+
+.unexpected-friend{
+  background-color: white;
+  padding: 0px 30px;
+  height: 55px;
+  margin-top: 10px;
+}
+
 .main-chat{
-  margin-top: 130px;
-  animation: fadeIn 0.8s linear;
+  margin-top: 150px;
+}
+
+.message-row:nth-child(2){
+  animation: fadeIn 2s 0.3s linear forwards;
+}
+
+.message-row:nth-child(3){
+  animation: fadeIn 2s 1.8s linear forwards;
+}
+
+.message-row:nth-child(4){
+  animation: fadeIn 2s 3.0s linear forwards;
+}
+
+.message-row:nth-child(5){
+  animation: fadeIn 2s 4.5s linear forwards;
+}
+
+.message-row:nth-child(6){
+  animation: fadeIn 2s 6.0s linear forwards;
+}
+
+.message-row:nth-child(7){
+  animation: fadeIn 2s 7.2s linear forwards;
+}
+
+.message-row:nth-child(2) .message_read{
+  animation: fadeOut 0.9s 1.8s linear forwards;
+}
+
+.message-row:nth-child(3) .message_read{
+  animation: fadeOut 0.9s 3.0s linear forwards;
+}
+
+.message-row:nth-child(4) .message_read{
+  animation: fadeOut 0.9s 4.5s linear forwards;
+}
+
+.message-row:nth-child(5) .message_read{
+  animation: fadeOut 0.9s 6.0s linear forwards;
+}
+
+.message-row:nth-child(6) .message_read{
+  animation: fadeOut 0.9s 7.2s linear forwards;
 }
 
 
@@ -52,6 +113,8 @@
 
 .message-row{
   display: flex;
+  margin-bottom: 30px;
+  opacity: 0;
 }
 
 .message_author{
@@ -83,12 +146,11 @@
 }
 
 .message-row--own{
-  margin: 30px 0;
   justify-content: flex-end;
 }
 
 .message-row--own .message_bubble{
-  background-color: var(--yellow);
+  background-color: #e3c98e;
   border-radius: 20px;
   border-top-right-radius: 0px;
   font-weight: 600;
@@ -97,6 +159,11 @@
 
 .message_time{
   color: rgba(0, 0, 0, 0.6);
+}
+
+.message_read{
+  color: #ff5200;
+  padding:0 8px;
 }
 
 .message-row--own .message-row_info{
@@ -154,7 +221,6 @@
 }
 
 .reply__column:last-child button{
-  background-color: var(--yellow);
   border-radius: 50%;
   border: none;
   width: 50px;

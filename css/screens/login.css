@@ -1,4 +1,3 @@
-
 .login-header{
   text-align: center;
   margin: 90px 0px;
@@ -11,6 +10,19 @@
 .login-header > .login-header_text{
   margin-top: 40px;
   color: #7c7c7c;
+}
+
+.login-selectbox{
+  width: 250px;
+  height: 40px;
+  margin: 20px 30px;
+  background-color: #e9ead4;
+  border: none;
+}
+
+
+.login-selectbox option{
+  background-color: #e9ead4;
 }
 
 .login-form {
@@ -36,6 +48,7 @@
 .login-form input:not([type="submit"]){
   border-bottom: rgba(0, 0, 0, 0.3) solid 1px;
   transition: border-color 0.3s ease-in-out;
+  background-color: #e9ead4;
 }
 
 
@@ -48,6 +61,8 @@
   background-color: #f6f6f6;
   cursor: pointer;
   border-radius: 5px;
+  background-color: #94968c;
+
 }
 
 .login-form a{

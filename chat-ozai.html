@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>chat-kakao</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar_column time">
+        <span>PM 5:40</span>
+      </div>
+      <div class="status-bar_column percent">
+        <span>47%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="alt-header">
+      <div class="alt-header__row">
+        <div class="alt-header__column">
+          <a href="javascript:history.back()"><span><i class="fas fa-chevron-left fa-2x"></i></span></a>
+        </div>
+        <div class="alt-header__column">
+          <h1 class="alt-header_title alt-header_chat-title">Ozai</h1>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fas fa-search fa-2x"></i></span>
+          <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+      </div>
+      <div class="alt-header__row unexpected-friend">
+        <div class="alt-header__column">
+          <span><i class="fas fa-user-plus"></i>추가</span>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fas fa-ban"></i>해제</span>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fas fa-exclamation-circle"></i>스팸신고</span>
+        </div>
+      </div>
+    </header>
+    <main class="main-screen main-chat">
+      <div class="chat-timestamp"><span>Monday, November 1,2021</span></div>
+      <div class="message-row">
+        <img src="https://static.wikia.nocookie.net/avatar/images/4/4a/Ozai.png/revision/latest/top-crop/width/360/height/360?cb=20130612170743" alt="Zuko" class="user-component_img user-component_img--m">
+        <div class="message-row_content">
+          <span class="message_author">Ozai</span>
+          <div class="message-row_info">
+            <span class="message_bubble">오랜만이군</span>
+            <span class="message_time">13:01</span>
+            <span class="message_read">1</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message">
+        <div>
+          <i class="far fa-smile-beam fa-2x"></i>
+          <button type="button" name="button">
+            <i class="fas fa-arrow-up fa-2x"></i>
+        </div>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      your screen is too big////
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"> </script>
+  </body>
+</html>

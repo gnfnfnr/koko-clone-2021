@@ -24,6 +24,38 @@
   }
 }
 
+@keyframes searchScale {
+  from{
+    transform: none;
+  }
+  to{
+    transform: scale(1.4);
+  }
+}
+
+@keyframes musicMove {
+  0%{
+    transform: none;
+  }
+  25%{
+    transform: translateY(10px) rotate(-25deg);
+  }
+  75%{
+    transform: translateY(-10px) rotate(25deg);
+  }
+  100%{
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-search:hover{
+  animation: searchScale 2s linear infinite;
+}
+
+.screen-header__icons .fa-music:hover{
+  animation: musicMove 2s linear infinite;
+}
+
 .screen-header__icons .fa-cog:hover{
   animation: cogSpinning 2s linear infinite;
 }
