@@ -19,3 +19,89 @@
   left: 155px;
   bottom: 96px;
 }
+
+.user-component__column:last-child:hover .comment-word{
+  animation: fadeLeftToRight 0.8s linear infinite;
+}
+
+.comment-word{
+  transform: translate(-15px, -38px);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+@keyframes fadeLeftToRight {
+  from{
+    opacity: 0;
+    transform: translate(-23px, -38px);
+  }
+
+  to{
+    transform: translate(-7px, -38px);
+    opacity: 1;
+  }
+}
+
+@keyframes youtubeColor {
+  from{
+    background-color: white;
+  }
+
+  to{
+    background-color: #FF0000;
+  }
+}
+
+@keyframes googleColor {
+  0%, 64%{
+    background-color: #4285f4;
+  }
+  16%, 100%{
+    background-color: #ea4335;
+  }
+  32%{
+    background-color: #fbbc05;
+  }
+  48%{
+    background-color: #fbbc05;
+  }
+  72%{
+    background-color: #34a853;
+  }
+}
+
+@keyframes naverColor {
+  from{
+    background-color: white;
+  }
+
+  to{
+    background-color: #19ce60;
+  }
+}
+
+@keyframes logoutColor {
+  from{
+    background-color: white;
+  }
+
+  to{
+    background-color:var(--blue);
+  }
+}
+
+.icon-row_icon:first-child:hover .fa-youtube{
+  animation: youtubeColor 1.2s linear infinite;
+}
+
+.icon-row_icon:nth-child(2):hover .fa-google{
+  animation: googleColor 1.5s linear infinite;
+}
+
+.icon-row_icon:nth-child(3):hover .fa-neos{
+  animation: naverColor 1.2s linear infinite;
+}
+
+.icon-row_icon:last-child:hover .fa-sign-out-alt{
+  animation: logoutColor 1.2s linear infinite;
+}

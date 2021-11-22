@@ -51,11 +51,31 @@
 }
 
 .user-component_img--sm{
-  background-color: var(--yellow);
+  background-color: white;
   padding: 20px;
   border-radius: 30px;
 }
 
 .user-component__time{
   margin-bottom: 10px;
+}
+
+.user-component__column:last-child > span{
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #aec3af;
+}
+
+.user-component_imgs{
+  width: 80px;
+  height: 80px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+.user-component_imgs img{
+  width: 40px;
+  height: 40px;
 }
