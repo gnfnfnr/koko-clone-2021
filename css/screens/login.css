@@ -1,18 +1,18 @@
-.login-header{
+.login-header {
   text-align: center;
   margin: 90px 0px;
 }
 
-.login-header > .login-header_title{
-    font-size: 25px;
+.login-header > .login-header_title {
+  font-size: 25px;
 }
 
-.login-header > .login-header_text{
+.login-header > .login-header_text {
   margin-top: 40px;
   color: #7c7c7c;
 }
 
-.login-selectbox{
+.login-selectbox {
   width: 250px;
   height: 40px;
   margin: 20px 30px;
@@ -20,8 +20,7 @@
   border: none;
 }
 
-
-.login-selectbox option{
+.login-selectbox option {
   background-color: #e9ead4;
 }
 
@@ -31,41 +30,38 @@
   margin: 0 30px;
 }
 
-.login-form input{
+.login-form input {
   padding: 15px 0px;
   font-size: 25px;
   margin-bottom: 20px;
-  border: none;
+  border: #e9ead4 2px solid;
 }
 
-.login-form input::placeholder{
+.login-form input::placeholder {
   color: rgba(0, 0, 0, 0.2);
 }
-.login-form input:focus{
-  border-color: var(--yellow);
+.login-form input:focus {
+  border: #8e947e 2px solid;
 }
 
-.login-form input:not([type="submit"]){
+.login-form input:not([type="submit"]) {
   border-bottom: rgba(0, 0, 0, 0.3) solid 1px;
-  transition: border-color 0.3s ease-in-out;
+  transition: border 0.5s ease-in-out;
   background-color: #e9ead4;
 }
-
 
 .login-form input[type="submit"]:nth-child(3) {
   margin-top: 20px;
 }
-
 
 .login-form input[type="submit"] {
   background-color: #f6f6f6;
   cursor: pointer;
   border-radius: 5px;
   background-color: #94968c;
-
 }
 
-.login-form a{
+.login-form a {
   text-align: center;
   text-decoration: none;
   color: inherit;

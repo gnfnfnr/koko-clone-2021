@@ -1,4 +1,8 @@
-.settings-set{
+.settings-list:last-child {
+  border-top: 1px solid black;
+}
+
+.settings-set {
   padding: 36px 0;
   position: relative;
   font-size: 20px;
@@ -7,11 +11,11 @@
   justify-content: space-between;
 }
 
-.settings-set-column:last-child{
+.settings-set-column:last-child {
   opacity: 0.7;
 }
 
-.settings-set:not(.settings-set:last-child){
+.settings-set:not(.settings-set:last-child) {
   padding: 36px 0;
   border-bottom: var(--main-border);
 }
@@ -21,13 +25,13 @@
   font-size: 25px;
 }
 
-.settings-set .badge{
+.settings-set .badge {
   position: absolute;
   left: 142px;
   bottom: 35px;
 }
 
-.settings-set_etc{
+.settings-set_etc {
   display: flex;
   justify-content: space-between;
 }

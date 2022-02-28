@@ -1,24 +1,44 @@
-#friends-header_display{
-  background-color: #F9F9FA;
+#friends-header_display {
+  background-color: #f9f9fa;
   text-align: center;
   font-size: 25px;
   padding: var(--vertical-space);
   display: block;
 }
 
-#friends-header_display i{
+#friends-header_display i {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.fa-info-circle::after{
+.fa-info-circle::after {
   content: "Lengend Of Our Story ";
   color: rgba(0, 0, 0, 0.5);
 }
 
-.friends-screen-channel_header{
+#friends-header_display:hover .fa-arrow-right {
+  animation: headerLight 1s ease-in forwards;
+}
+
+.friends-screen-channel_header {
   border-top: var(--main-border);
   padding-top: 15px;
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-arrow-right {
+  opacity: 0;
+}
+
+@keyframes headerLight {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    color: var(--blue);
+    transform: scaleX(3) scaleY(2) translateX(10px);
+  }
 }

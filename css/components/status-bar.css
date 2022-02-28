@@ -1,4 +1,4 @@
-.status-bar{
+.status-bar {
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -7,26 +7,27 @@
   width: 100%;
   box-sizing: border-box;
   top: 0;
+  background-color: #dde0d5;
 }
 
-.status-bar_column{
+.status-bar_column {
   width: 33%;
 }
 
-.status-bar_column:first-child{
+.status-bar_column:first-child {
   margin-right: 5px;
 }
 
-.status-bar_column:nth-child(2){
+.status-bar_column:nth-child(2) {
   display: flex;
   justify-content: center;
 }
 
-.status-bar_column:last-child{
+.status-bar_column:last-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.status-bar_column .fa-battery-full{
+.status-bar_column .fa-battery-full {
   margin: 0 5px;
 }

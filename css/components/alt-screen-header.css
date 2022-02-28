@@ -1,34 +1,37 @@
-.alt-header__row{
+.alt-header__row {
   display: flex;
   padding: 40px 30px 0;
   justify-content: space-between;
   align-items: center;
-  opacity: 85%;
 }
 
-.alt-header_title{
+.alt-header {
+  z-index: 1;
+  opacity: 80%;
+}
+
+.alt-header_title {
   font-weight: 600;
   font-size: 30px;
 }
-.alt-header__column span:last-child{
+.alt-header__column span:last-child {
   margin-left: 20px;
 }
 
-.alt-header__column{
+.alt-header__column {
   width: 33%;
 }
 
-.alt-header__column:first-child{
+.alt-header__column:first-child {
   margin-right: auto;
 }
 
-
-.alt-header__column:last-child{
+.alt-header__column:last-child {
   margin-left: auto;
   display: flex;
   justify-content: end;
 }
 
-.alt-header__column:nth-child(2){
+.alt-header__column:nth-child(2) {
   text-align: center;
 }
